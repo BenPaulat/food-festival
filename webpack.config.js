@@ -46,5 +46,10 @@ module.exports = {
             analyzerMode: 'static', // report outputs to HTML file in the dist folder
         })
     ],
+    devServer: {
+        static: {
+            directory: __dirname
+        }
+    },
     mode: 'development'
 };
